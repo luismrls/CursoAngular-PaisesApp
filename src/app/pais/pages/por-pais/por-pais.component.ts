@@ -34,4 +34,9 @@ export class PorPaisComponent {
     });
   }
 
+
+  sugerencias( event: string ) {
+    this.hayError = false;
+
+  }
 }
