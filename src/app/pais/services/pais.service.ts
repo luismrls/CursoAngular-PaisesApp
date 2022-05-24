@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Country } from '../interfaces/pais.interface';
+import { Country, CountryV2 } from '../interfaces/pais.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -25,10 +25,10 @@ export class PaisService {
     return this.http.get<Country[]>( url );
   }
 
-  buscarPorCodigo( id: string ): Observable<Country> {
+  buscarPorCodigo( id: string ): Observable<CountryV2> {
 
     const url = `${ this.apiUrl_V2 }/alpha/${ id }`;
-    return this.http.get<Country>( url );
+    return this.http.get<CountryV2>( url );
   }
 
 }
