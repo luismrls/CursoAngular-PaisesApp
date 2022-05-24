@@ -4,7 +4,7 @@
 <h5>Seleccione una region</h5>
 
 <div class="row">
-    <div class="col">
+    <div class="col animate__animated animate__fadeIn" >
         <!-- [class.btn-primary] = "region ===regionActiva" -->
         <!-- [ngClass]="{
             'btn-primary': regionActiva === region,
@@ -20,4 +20,4 @@
 
 <hr>
 
-<app-pais-tabla [paises]="paises" *ngIf="paises.length > 0"></app-pais-tabla>
+<app-pais-tabla class="animate__animated animate__fadeIn" [paises]="paises" *ngIf="paises.length > 0"></app-pais-tabla>

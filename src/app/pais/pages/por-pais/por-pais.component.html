@@ -3,6 +3,7 @@
 <div class="row"> 
     <div class="col">
       <app-pais-input 
+      class="animate__animated animate__fadeIn"
         (onEnter)="buscar( $event )" 
         (onDebounce)="sugerencias( $event )"
         placeholder="buscar pais..."
@@ -19,6 +20,6 @@
 
 <div  *ngIf="paises.length > 0" class="row">
     <div class="col">
-        <app-pais-tabla [paises]="paises"></app-pais-tabla>
+        <app-pais-tabla class="animate__animated animate__fadeIn" [paises]="paises"></app-pais-tabla>
     </div>
 </div>
